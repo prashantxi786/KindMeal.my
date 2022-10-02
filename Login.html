@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to KindMeal.my</title>
+</head>
+<style>
+    body{
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        background-image: url(data:image/png;base64,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);
+    }
+    div{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width:468px;
+        height:450px;    
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        gap: 10px;  
+        margin-top:100px;
+        border-radius:20px;
+        background-color:antiquewhite
+    }
+    button{
+        background-color:#05be5b; 
+        width:150px;
+        height: 30px;
+        border-radius:10px;
+        border:none;
+    }
+    input{
+        width: 250px;
+        height: 30px;
+        border-radius:10px;
+        border:1px solid #ccc;
+    }
+    #bodyimg{
+        width:100%;
+        height:100%;
+    }
+</style>
+<body>
+    <div>
+        <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
+        <p>Member Login</p>
+        <input id="name" type="email" placeholder="Your Name">
+        <input id="password" type="password" placeholder="Your Password">
+        <button onclick="login()">Login</button>
+        <hr color="red" width="90%" >
+        <a href="SignUp.html">Click here to Sign Up</a>  
+    </div>
+</body>
+</html>
+<script>
+    let data=JSON.parse(localStorage.getItem("userData"));
+   
+    function login(){
+        let username=document.querySelector("#name").value;
+        let userpassword=document.querySelector("#password").value;
+        if(username==data.Name&&userpassword==data.Password){
+            window.location.assign("homepage.html");
+        }
+        else{
+            console.log(username,userpassword)
+            alert("Login failed");
+           
+        }
+    }
+</script>
